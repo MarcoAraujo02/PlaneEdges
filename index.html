@@ -64,8 +64,17 @@
       color: var(--white);
       letter-spacing: -0.02em;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .nav-logo span { color: var(--gold); }
+    .nav-logo .logo-text {
+      color: var(--white);
+      white-space: nowrap;
+    }
+    .nav-logo .logo-text .logo-edge {
+      color: var(--gold);
+    }
 
     .nav-links {
       display: flex;
@@ -506,8 +515,19 @@
       font-size: 0.85rem;
       border-top: 1px solid rgba(255,255,255,0.06);
     }
-    .footer-logo { font-weight: 700; font-size: 1.2rem; color: var(--white); letter-spacing: -0.02em; text-decoration: none; margin-bottom: 15px; display: inline-block; }
-    .footer-logo span { color: var(--gold); }
+    .footer-logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      margin-bottom: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-logo .logo-text { color: var(--white); white-space: nowrap; }
+    .footer-logo .logo-edge { color: var(--gold); }
     .footer-copy { display: block; margin-bottom: 15px; }
     .footer-links { list-style: none; display: flex; justify-content: center; gap: 25px; }
     .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color .2s; }
@@ -557,9 +577,8 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="navbar-container">
-      <a href="#hero" class="nav-logo" style="display:flex; align-items:center; gap:10px;">
-        <img src="imagens/logo.png" alt="" style="height:40px; width:auto; display:block;">
-        Plan<span>Edge</span> Solutions
+      <a href="#hero" class="nav-logo">
+        <img src="imagens/logo.png" alt="" style="height:40px; width:auto; display:block;"><span class="logo-text">Plan<span class="logo-edge">Edge</span> Solutions</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -659,42 +678,15 @@
         <p class="section-sub">Our experience spans a broad range of complex industrial and commercial sectors across the globe.</p>
       </div>
       <div class="industries-grid">
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Energy</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Oil &amp; Gas</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Utilities</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Chemical Plants</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Thermoelectric Power Plants</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Steel Industry</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Pulp and Petrochemical / Petroleum</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Pharmaceutical</span>
-        </div>
-        <div class="industry-item">
-          <div class="industry-dot"></div>
-          <span>Commercial Buildings, Residences &amp; Mixed-Use Development</span>
-        </div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Energy</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Oil &amp; Gas</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Utilities</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Chemical Plants</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Thermoelectric Power Plants</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Steel Industry</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Pulp and Petrochemical / Petroleum</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Pharmaceutical</span></div>
+        <div class="industry-item"><div class="industry-dot"></div><span>Commercial Buildings, Residences &amp; Mixed-Use Development</span></div>
       </div>
     </div>
   </section>
@@ -804,7 +796,7 @@
   <!-- FOOTER -->
   <footer>
     <a href="#hero" class="footer-logo">
-      <img src="imagens/logo.png" alt="" style="height:38px; width:auto; display:inline-block; filter:brightness(0) invert(1);">
+      <img src="imagens/logo.png" alt="" style="height:38px; width:auto; display:block;">
     </a>
     <span class="footer-copy">&#169; 2026 PlanEdge Solutions &#8226; All Rights Reserved</span>
     <ul class="footer-links">
